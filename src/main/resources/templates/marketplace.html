@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<style>
+    #searchCriteria {
+        background-image: url('resources/search.png');
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    .card {
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    .card-container {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+</style>
+<head th:include="layout :: menuFragment">
+    <br>
+    <br>
+    <div id="container">
+        <p>
+        <form th:action="@{/marketplace}" th:object="${search}" method="get">
+            <input id="searchCriteria" placeholder="Pesquise Aqui" required type="text" th:field="*{searchString}"/>
+        </form>
+        </p>
+        <main class="card-container">
+            <div class="card" th:each="gig : ${gigs}">
+                <p th:text="${gig.title}">
+                </p>
+                <p th:text="${gig.description}">
+                </p>
+            </div>
+        </main>
+        <div id="pagefoot" th:include="layout :: footerFragment">Footer
+        </div>
+    </div>
+
+
+    <!-- container -->
+</body>
+</html>

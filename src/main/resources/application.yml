@@ -1,0 +1,22 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          keycloak:
+            client-id: login-app
+            authorization-grant-type: authorization_code
+            scope: openid
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:28080/auth/realms/marketplace
+            user-name-attribute: preferred_username
+      resourceserver:
+        jwt:
+          issuer-uri: https://localhost:28080/realms/master
+  datasource:
+    url: jdbc:postgresql://localhost:5432/marketplace
+    username: market
+    password: place
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml

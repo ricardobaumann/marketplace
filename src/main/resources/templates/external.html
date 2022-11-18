@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Na Bagagem</h1>
+    </div>
+    <div>
+        <p>Aqui voce encontra todos os produtos e servicos oferecidos pela comunidade Na Bagagem</p>
+
+        <div class="well">
+            <b>Acesse agora o </b><a th:href="@{/marketplace}">Marketplace</a>
+        </div>
+    </div>
+    <div id="pagefoot" th:include="layout :: footerFragment">Footer
+    </div>
+</div>
+<!-- container -->
+
+</body>
+</html>
