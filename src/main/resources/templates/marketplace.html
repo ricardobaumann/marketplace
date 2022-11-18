@@ -33,7 +33,7 @@
     <div id="container">
         <p>
         <form th:action="@{/marketplace}" th:object="${search}" method="get">
-            <input id="searchCriteria" placeholder="Pesquise Aqui" required type="text" th:field="*{searchString}"/>
+            <input id="searchCriteria" placeholder="Pesquise Aqui" type="text" th:field="*{searchString}"/>
         </form>
         </p>
         <main class="card-container">

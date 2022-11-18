@@ -9,11 +9,11 @@ spring:
             scope: openid
         provider:
           keycloak:
-            issuer-uri: http://localhost:28080/auth/realms/marketplace
+            issuer-uri: http://192.168.0.66:28080/auth/realms/marketplace
             user-name-attribute: preferred_username
       resourceserver:
         jwt:
-          issuer-uri: https://localhost:28080/realms/master
+          issuer-uri: http://192.168.0.66:28080/realms/master
   datasource:
     url: jdbc:postgresql://localhost:5432/marketplace
     username: market
