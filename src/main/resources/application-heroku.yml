@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      client:
+        provider:
+          keycloak:
+            issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
+      resourceserver:
+        jwt:
+          issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
