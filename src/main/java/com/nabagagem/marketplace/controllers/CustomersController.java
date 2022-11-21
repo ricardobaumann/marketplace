@@ -1,5 +1,6 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.controllers;
 
+import com.nabagagem.marketplace.entity.Customer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

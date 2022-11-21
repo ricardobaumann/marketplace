@@ -1,4 +1,4 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,5 +1,8 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.controllers;
 
+import com.nabagagem.marketplace.entity.Gig;
+import com.nabagagem.marketplace.forms.Search;
+import com.nabagagem.marketplace.repos.GigRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

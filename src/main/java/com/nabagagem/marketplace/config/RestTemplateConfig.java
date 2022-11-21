@@ -1,4 +1,4 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

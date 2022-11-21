@@ -1,4 +1,4 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

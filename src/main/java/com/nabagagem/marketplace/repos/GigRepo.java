@@ -1,5 +1,6 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.repos;
 
+import com.nabagagem.marketplace.entity.Gig;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

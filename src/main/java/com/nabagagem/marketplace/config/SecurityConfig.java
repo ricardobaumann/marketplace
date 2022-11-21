@@ -1,4 +1,4 @@
-package com.nabagagem.marketplace;
+package com.nabagagem.marketplace.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
