@@ -11,3 +11,7 @@ spring:
           issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
+  datasource:
+    url: jdbc:postgresql://localhost:5432/marketplace
+    username: market
+    password: place
