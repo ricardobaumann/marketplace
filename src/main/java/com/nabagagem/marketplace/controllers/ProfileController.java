@@ -17,7 +17,7 @@ public class ProfileController {
 
     @GetMapping("/profile/edit")
     public String editProfile() {
-        return "edit-profile";
+        return "profile/edit";
     }
 
     @PostMapping("/profile")

@@ -31,7 +31,8 @@ public class User {
     private Picture picture;
 
     @Transient
-    public String fullName() {
+    public String getFullName() {
         return String.format("%s %s", firstName, lastName);
     }
+    
 }
