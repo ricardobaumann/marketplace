@@ -9,9 +9,5 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
-  datasource:
-    url: jdbc:postgresql://localhost:5432/marketplace
-    username: market
-    password: place
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
