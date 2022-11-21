@@ -12,6 +12,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -24,7 +25,8 @@ public class KeycloakLogoutHandler implements LogoutHandler {
     public void logout(HttpServletRequest request,
                        HttpServletResponse response,
                        Authentication authentication) {
-        logoutFromKeycloak((OidcUser) authentication.getPrincipal());
+        Optional.ofNullable(authentication)
+                .ifPresent(__ -> logoutFromKeycloak((OidcUser) authentication.getPrincipal()));
     }
 
     private void logoutFromKeycloak(OidcUser user) {

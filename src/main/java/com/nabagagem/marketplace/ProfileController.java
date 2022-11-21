@@ -11,4 +11,8 @@ public class ProfileController {
         return "profile";
     }
 
+    @GetMapping("/profile/edit")
+    public String editProfile(MarketplaceUser marketplaceUser) {
+        return "edit-profile";
+    }
 }
