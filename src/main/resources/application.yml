@@ -2,6 +2,11 @@ spring:
   security:
     oauth2:
       client:
+        registration:
+          keycloak:
+            client-id: login-app
+            authorization-grant-type: authorization_code
+            scope: openid
         provider:
           keycloak:
             issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
