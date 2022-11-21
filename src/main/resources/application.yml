@@ -2,18 +2,13 @@ spring:
   security:
     oauth2:
       client:
-        registration:
-          keycloak:
-            client-id: login-app
-            authorization-grant-type: authorization_code
-            scope: openid
         provider:
           keycloak:
-            issuer-uri: http://192.168.0.66:28080/auth/realms/marketplace
+            issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
             user-name-attribute: preferred_username
       resourceserver:
         jwt:
-          issuer-uri: http://192.168.0.66:28080/realms/master
+          issuer-uri: https://nabagagem-keycloak.herokuapp.com/auth/realms/nabagagem
   datasource:
     url: jdbc:postgresql://localhost:5432/marketplace
     username: market
